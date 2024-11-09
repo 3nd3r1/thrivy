@@ -15,7 +15,9 @@ const Navbar = () => {
         <header className="w-full bg-white shadow-md fixed z-50">
             <nav className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
                 {/* Logo */}
-                <Link href="/" ><Image src="/logo.png" alt="Logo" width={50} height={50}/></Link>
+                <Link href="/">
+                    <Image src="/logo.png" alt="Logo" width={50} height={50} />
+                </Link>
 
                 {/* Desktop Nav Links */}
                 <ul className="hidden md:flex space-x-6">
@@ -42,9 +44,11 @@ const Navbar = () => {
                             <li>
                                 <Link href="/">Home</Link>
                             </li>
-
                             <li>
-                                <Link href="/features">Features</Link>
+                                <Link href="/questionnaire">Questionnaire</Link>
+                            </li>
+                            <li>
+                                <Link href="/companies">Companies</Link>
                             </li>
                         </ul>
                     </PopoverContent>
