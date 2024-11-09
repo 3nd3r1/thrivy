@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Thrivy: Where Talent Thrives, and Careers Grow
 
-## Getting Started
+Thrivy is the platform designed to connect people with companies that match not just their skills, but their values. We believe that work should be more than just a paycheck — it should be a place where you thrive, grow, and truly make an impact. Whether you're looking to elevate your career or a company is seeking talent that aligns with its core values, Thrivy is the place where both talent and companies can reach their fullest potential.
 
-First, run the development server:
+## Our Mission
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+At Thrivy, we aim to reshape the way people approach work. We focus on well-being, culture, and values — not just the job description. It's time for people to find work that empowers them, challenges them, and helps them thrive.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For companies, we provide an opportunity to showcase their values, culture, and commitment to employee well-being. Instead of just hiring for skills, we match people who fit into the culture and thrive in an environment that aligns with their personal values.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## how it works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### for employees
 
-## Learn More
+Your well-being at work matters, and we’re here to help you understand how your job is contributing to your happiness and growth. The ThriveScore Questionnaire is designed to get a clear picture of your experience at work by asking you about various aspects of your job.By answering a few simple questions, you’ll receive a ThriveScore that reflects your overall work satisfaction. This score gives you insights into areas of your job that may need improvement, helping you better understand how aligned your current role is with your values and well-being.
 
-To learn more about Next.js, take a look at the following resources:
+### for job seekers (not implemented)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+take our personalized questionnaire that explores your work preferences, values, and well-being priorities. based on your responses, we match you with companies that not only need your skills but also resonate with your personal goals and values. with thrivy, you don’t just find a job — you find a place where you can grow and thrive.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### for companies (not implemented)
 
-## Deploy on Vercel
+create a profile showcasing your company's values, culture, and commitment to employee well-being. highlight what makes your company unique and set yourself apart in the eyes of potential employees. once you’ve created your company profile, you can review talent profiles to find the perfect match based on both skills and shared values.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# thrive score
+both employees and companies receive a thrive score, reflecting how well they align with their values and culture. the higher the thrive score, the better the match. this score empowers job seekers to make informed decisions about where they work, and helps companies attract talent that fits their environment.
