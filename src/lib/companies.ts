@@ -1,6 +1,7 @@
 import { GetQuestionnaireResponses } from "@/lib/questionnaire";
 import { Company, QuestionnaireCategory } from "@/lib/types";
 import { IQuestionnaireResponse } from "@/lib/models/questionnaire-response";
+import connectToDatabase from "./database";
 
 const weights: Map<QuestionnaireCategory, number> = new Map<
     QuestionnaireCategory,
@@ -70,6 +71,7 @@ const calculateThriveScore = (
 };
 
 export const GetCompanies = async () => {
+    await connectToDatabase();
     const companyScores: Map<string, number[]> = new Map<string, number[]>();
 
     const questionnaireResponses = await GetQuestionnaireResponses();
