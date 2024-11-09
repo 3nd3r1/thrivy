@@ -2,7 +2,7 @@ import connectToDatabase from "@/lib/database";
 import { NewQuestionnaireResponse } from "@/lib/types";
 import QuestionnaireResponse from "@/lib/models/questionnaire-response";
 
-export const AddQuestionnaireResponse = async (
+export const addQuestionnaireResponse = async (
     newQuestionnaireResponse: NewQuestionnaireResponse
 ) => {
     await connectToDatabase();
@@ -10,6 +10,6 @@ export const AddQuestionnaireResponse = async (
     return questionnaireResponse;
 };
 
-export const GetQuestionnaireResponses = () => {
+export const getQuestionnaireResponses = () => {
     return QuestionnaireResponse.find();
 }

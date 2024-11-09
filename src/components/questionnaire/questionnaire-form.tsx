@@ -29,14 +29,17 @@ import QuestionnaireCategory from "./questionnaire-category";
 import QuestionnaireQuestion from "./questionnaire-question";
 import { useEffect, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import ThriveScore from "../thrive-score";
 
 const QuestForm = ({
     isSubmitting,
     hasSubmitted,
+    thriveScore,
     onSubmit,
 }: {
     isSubmitting: boolean;
     hasSubmitted: boolean;
+    thriveScore: number | null;
     onSubmit: (data: NewQuestionnaireResponse) => Promise<void>;
 }) => {
     const form = useForm<NewQuestionnaireResponse>({
@@ -55,8 +58,18 @@ const QuestForm = ({
 
     if (hasSubmitted) {
         return (
-            <div className="flex justify-center">
-                <h2>Thank you for answering!</h2>
+            <div className="flex flex-col justify-center text-center">
+                <div>
+                    <span className="text-lg">Thank you for answering!</span>
+                </div>
+                {thriveScore != null && (
+                    <div>
+                        <span className="text-lg">
+                            Your ThriveScore is{" "}
+                            <ThriveScore thriveScore={thriveScore} />
+                        </span>
+                    </div>
+                )}
             </div>
         );
     }
@@ -163,6 +176,7 @@ const QuestForm = ({
 
 const QuestionnaireForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(true);
+    const [thriveScore, setThriveScore] = useState<number | null>(null);
     const [hasSubmitted, setHasSubmitted] = useState(false);
 
     const { toast } = useToast();
@@ -186,11 +200,14 @@ const QuestionnaireForm = () => {
                 throw new Error("Failed to submit survey");
             }
 
+            const responseData = await response.json();
+
             toast({
                 title: "Survey Submitted",
                 description: "Thank you for your feedback!",
             });
             setHasSubmitted(true);
+            setThriveScore(responseData.thriveScore);
         } catch (error) {
             console.error("Error submitting survey:", error);
             toast({
@@ -217,6 +234,7 @@ const QuestionnaireForm = () => {
                         <QuestForm
                             isSubmitting={isSubmitting}
                             hasSubmitted={hasSubmitted}
+                            thriveScore={thriveScore}
                             onSubmit={onSubmit}
                         />
                     </CardContent>

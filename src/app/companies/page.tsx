@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/table";
 import { Company } from "@/lib/types";
 import ClipLoader from "react-spinners/ClipLoader";
+import ThriveScore from "@/components/thrive-score";
 
 const Companies = () => {
     const [companies, setCompanies] = useState<Company[]>([]);
@@ -47,14 +48,14 @@ const Companies = () => {
 
     if (isLoading) {
         return (
-            <div>
+            <div className="flex justify-center">
                 <ClipLoader />
             </div>
         );
     }
 
     if (error) {
-        return <div>{error}</div>;
+        return <div className="flex justify-center text-center">{error}</div>;
     }
 
     return (
@@ -82,7 +83,7 @@ const Companies = () => {
                                     {company.name}
                                 </TableCell>
                                 <TableCell>
-                                    {company.thriveScore.toFixed(2)}
+                                    <ThriveScore thriveScore={company.thriveScore} />
                                 </TableCell>
                             </TableRow>
                         ))}

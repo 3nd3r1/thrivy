@@ -1,8 +1,8 @@
-import { GetCompanies } from "@/lib/companies";
+import { getCompanies } from "@/lib/companies";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(_: NextRequest) {
-    const companies = await GetCompanies();
+    const companies = await getCompanies();
 
     return NextResponse.json({
         companies: companies,
