@@ -34,7 +34,9 @@ const Home = () => {
                                     Thought-Provoking Questions
                                 </h2>
                                 <p className="text-gray-600">
-                                    Answer a short questionnaire about your work environments then see how you compare to others.
+                                    Answer a short questionnaire about your work
+                                    environments then see how you compare to
+                                    others.
                                 </p>
                             </CardContent>
                         </Card>
@@ -45,7 +47,9 @@ const Home = () => {
                                     Data-Driven Insights
                                 </h2>
                                 <p className="text-gray-600">
-                                    See actual data on how companies are performing in different areas of workplace satisfaction.
+                                    See actual data on how companies are
+                                    performing in different areas of workplace
+                                    satisfaction.
                                 </p>
                             </CardContent>
                         </Card>
@@ -66,7 +70,8 @@ const Home = () => {
                                     Collective Impact
                                 </h3>
                                 <p className="text-gray-600">
-                                    The most important information comes from the employees not the company.
+                                    The most important information comes from
+                                    the employees not the company.
                                 </p>
                             </div>
                             <div>
@@ -75,8 +80,7 @@ const Home = () => {
                                     Inspire Change
                                 </h3>
                                 <p className="text-gray-600">
-                                    Your feedback can help companies improve their
-                                    workplace culture.
+                                    Vote for us if you love <strong>brainrot</strong>!
                                 </p>
                             </div>
                             <div>
@@ -109,10 +113,7 @@ const Home = () => {
                 </main>
                 <footer className="bg-blue-800 text-white py-8 mt-16">
                     <div className="container mx-auto px-4 text-center">
-                        <p>
-                            &copy; 2024 Thrivy. All rights
-                            reserved.
-                        </p>
+                        <p>&copy; 2024 Thrivy. All rights reserved.</p>
                         <p className="mt-2">
                             Empowering workplaces through data-driven insights.
                         </p>
