@@ -16,4 +16,4 @@
 
 ## Demo
 
-[thrivy.host.ender.fi](https://thrivy.host.ender.fi)
+[thrivy.host.ender.fi](https://thrivy.eros.ender.fi)
